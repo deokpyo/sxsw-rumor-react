@@ -1,5 +1,6 @@
 import React from "react";
-import { Main, Footer } from "./container";
+import { Main } from "./Main";
+import { Footer } from "./Footer";
 
 const App = () => {
     return (

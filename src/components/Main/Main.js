@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { TopFeeds, Feed } from "./index";
-import { Title } from "../presentational";
+import { Title } from "../common";
 
 export default class Main extends Component {
   render() {
