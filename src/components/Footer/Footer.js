@@ -25,13 +25,16 @@ export default class Footer extends Component {
       alert("Please fill out your post");
       return;
     }
-    const currentDate = moment(new Date()).format("MMMM Do");
+    const dateFormatted = moment(new Date()).format("MMMM Do");
+    const dateCurrent = moment(new Date()).format("X");
+
     fire
       .database()
       .ref()
       .push({
         input: this.state.post,
-        date: currentDate,
+        date: dateFormatted,
+        timestamp: dateCurrent,
         likes: {
           legit: 0,
           shit: 0
@@ -62,6 +65,7 @@ export default class Footer extends Component {
                 btnKey=""
                 btnText="POST"
                 btnClick={this.onButtonSubmit}
+                isPost={true}
               />
             </div>
           </div>

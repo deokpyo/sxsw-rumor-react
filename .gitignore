@@ -1,6 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
+package-lock.json
 /node_modules
 
 # testing
@@ -8,6 +9,10 @@
 
 # production
 /build
+
+# firebase
+firebase.json
+src/fire.js
 
 # misc
 .DS_Store
