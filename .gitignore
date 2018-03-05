@@ -11,7 +11,6 @@ package-lock.json
 /build
 
 # firebase
-firebase.json
 src/fire.js
 
 # misc
