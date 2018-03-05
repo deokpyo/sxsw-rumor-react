@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { TopFeeds, Feed } from "./index";
+import { Footer } from "../Footer";
 import { Title, Loader } from "../common";
 import fire from "../../fire";
 import { compare } from "../../utils";
@@ -98,12 +99,16 @@ export default class Main extends Component {
     });
 
     return (
-      <div className="container" id="main">
-        <Title text={"Top Rumors"} />
-        <div id="top-posts">{topFeed}</div>
-        <div className="divider" />
-        <Title text={"Feed"} />
-        <div id="recent-posts">{feed}</div>
+      <div>
+        <div id="main-left">
+          <Title text={"Top Rumors"} />
+          <div id="top-posts">{topFeed}</div>
+        </div>
+        <div id="main-right">
+          <Title text={"Feed"} />
+          <div id="recent-posts">{feed}</div>
+          <Footer />
+        </div>
       </div>
     );
   }

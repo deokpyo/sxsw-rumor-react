@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
 .flow-text,
 h3 {
   letter-spacing: normal;
@@ -80,6 +86,18 @@ button:hover {
 button[disabled] {
   background-color: #a3a3a3;
 }
+#main-left {
+  float: left;
+  width: 50%;
+  max-height:100%;
+  overflow: auto;
+}
+#main-right {
+  float: left;
+  width: 50%;
+  height: 400px;
+  overflow: auto;
+}
 #submit {
   background-color: #00f;
   width: auto;
@@ -97,7 +115,6 @@ button[disabled] {
   padding: 8px 0;
   background-color: #fff;
   position: fixed;
-  left: 0;
   bottom: 0;
   height: auto;
   width: 100%;
