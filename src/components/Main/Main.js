@@ -86,13 +86,14 @@ export default class Main extends Component {
     let topFeedArray = Object.assign([], this.state.topFeed);
     topFeedArray.sort(compare);
     const topFeed = topFeedArray.map((feed, index) => {
+      const counter = feed.likes.legit - feed.likes.shit;
       return (
         <TopFeeds
           key={index}
           feedDate={feed.date}
           feedIndex={index + 1}
           feedText={feed.input}
-          feedCount={feed.likes.legit}
+          feedCount={counter}
         />
       );
     });
