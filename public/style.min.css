@@ -65,6 +65,7 @@ p {
   color: #000;
   margin-bottom: 20px;
   padding: 10px;
+  word-wrap: break-word;
 }
 button {
   min-width: 84px;
